@@ -1,0 +1,35 @@
+<html>
+
+    <head>
+        <title>Tela de Cadastro</title>
+        
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="./css/cadastro.css">
+        <script src="./js/cadastro.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"> </script>
+        
+    </head>
+    <body>
+        <div class="container-principal">
+            <div class="formulario">
+                <form id="form-login" action="php/cadastrar-usuario.php" method="POST">
+
+                    <h3> Cadastro </h3>
+
+                    <input type="text" placeholder="Nome" id="nome" required="true" minlength="15" maxlength="255"/> 
+
+                    <input type="text" placeholder="E-Mail" id="email" required="true" minlength="15" maxlength="255"/> 
+
+                    <input type="text" placeholder="Usuário:" id="usuario" required="true" minlength="3" maxlength="15"/>
+
+                    <input type="password" placeholder="Senha:" id="senha" required="true" minlength="4" maxlength="15"/>  
+
+                    <p> <a href = "index.html"> Já possui uma conta? Clique Aqui. </a> </p>
+                    
+                    <input type="submit" value="Entrar">
+
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
